@@ -1,0 +1,18 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;background:#0a0418;color:#fff;font-family:system-ui,sans-serif}
+.tela{min-height:100dvh;display:grid;place-items:center;padding:18px}
+.oculto{display:none !important}
+.card{width:100%;max-width:440px;background:#14082e;border:1px solid #7c3aed55;padding:28px;border-radius:16px;text-align:center}
+h1{background:linear-gradient(90deg,#a855f7,#ec4899);-webkit-background-clip:text;color:transparent;margin-bottom:8px}
+input,textarea,button{width:100%;margin-top:10px;padding:12px;border-radius:10px;border:1px solid #7c3aed55;background:#0f0624;color:#fff;font-size:15px;outline:none}
+button{cursor:pointer;border:none;font-weight:700}
+#btnEntrar,#gerar{background:linear-gradient(90deg,#7c3aed,#ec4899)}
+.modos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
+.modos button{background:#1b0b3a}
+.modos button.ativo{background:linear-gradient(90deg,#7c3aed,#ec4899);box-shadow:0 0 14px #a855f780}
+.chave{background:#14082e;padding:12px;border-radius:12px;border:1px solid #7c3aed44;font-size:13px}
+.mt{margin-top:10px;display:block}
+textarea{min-height:130px;resize:vertical}
+pre{background:#05020f;border:1px solid #7c3aed44;padding:14px;border-radius:10px;white-space:pre-wrap;max-height:360px;overflow:auto;font-size:13px}
+.zip{background:#16a34a}
+#app{width:100%;max-width:720px;display:block;padding-bottom:28px}
