@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gerador IA · 3 Motores</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+</head>
+<body>
+  <!-- LOGIN -->
+  <section id="login" class="tela">
+    <div class="card">
+      <h1>⚡ GERADOR IA 3‑MOTORES</h1>
+      <p>Gemini · GLM · Bolt · ZIP pronto</p>
+      <input id="pw" type="password" placeholder="Senha de acesso" maxlength="10" autocomplete="off"/>
+      <button id="btnEntrar">ENTRAR</button>
+    </div>
+  </section>
+
+  <!-- SISTEMA -->
+  <section id="app" class="tela oculto">
+    <header>
+      <h1>⚡ 3‑MOTORES</h1>
+      <div class="modos">
+        <button data-m="1" class="ativo">🚀 RÁPIDO</button>
+        <button data-m="2">🧠 GEMINI</button>
+        <button data-m="3">💠 GLM‑5.2</button>
+      </div>
+    </header>
+
+    <div class="chave">
+      <label>🔑 Chave Gemini <small>(gratuita)</small></label>
+      <input id="kG" type="text" placeholder="AIzaSy…" />
+      <label class="mt">💠 Chave Zhipu / GLM <small>(opcional)</small></label>
+      <input id="kZ" type="text" placeholder="sua‑chave‑aqui" />
+    </div>
+
+    <textarea id="prompt" placeholder="Descreva o que quer criar… ex: sistema de vendas, app windows, página de captura, fluxo comercial…"></textarea>
+    <button id="gerar">✨ GERAR TUDO</button>
+
+    <pre id="saida" class="oculto"></pre>
+    <button id="zip" class="zip oculto">📦 BAIXAR PROJETO .ZIP</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
